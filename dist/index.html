@@ -1,0 +1,44 @@
+<html>
+<head>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        .canvas-container {
+            display: inline-block;
+            height: 400px;
+            width: 400px;
+        }
+        .coordinates-container {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .coordinates-container .active {
+            background: palegoldenrod;
+        }
+    </style>
+</head>
+<body>
+
+<h1>4d</h1>
+
+<p>Use WASD or Arrow Keys to change coordinates of 4d point.</p>
+
+<div class="coordinates-container">
+    w:<span id="wQty"></span>
+    x:<span id="xQty"></span>
+    y:<span id="yQty"></span>
+    z:<span id="zQty"></span>
+</div>
+
+<div class="canvas-container"><canvas id="wxChart" width="1" height="1"></canvas></div>
+<div class="canvas-container"><canvas id="wyChart" width="1" height="1"></canvas></div>
+<div class="canvas-container"><canvas id="wzChart" width="1" height="1"></canvas></div>
+<div class="canvas-container"><canvas id="xyChart" width="1" height="1"></canvas></div>
+<div class="canvas-container"><canvas id="xzChart" width="1" height="1"></canvas></div>
+<div class="canvas-container"><canvas id="yzChart" width="1" height="1"></canvas></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
